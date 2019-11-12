@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+
+body {
+    background-color: #2c6165;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15pt;
+    transition: 500ms;
+}
+
+header {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+
+}
+
+section#game {
+    transition: 2000ms;
+    display: none;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
+}
+
+section#menu {
+    transition: 1s;
+    display: block;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
+}
+
+section#win {
+    transition: 1s;
+    display: none;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
+}
+
+section#loose {
+    transition: 1s;
+    display: none;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
+}
+
+footer {
+
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 1px 1px 5px black;
+}
+
+
+input#try {
+    text-transform: uppercase;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+    margin: auto;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12pt;
+    text-align: center;
+    margin-bottom: -30px;
+    font-family: 'Anton', sans-serif;
+}
+
+
+div#words_chosen {
+    text-align: center;
+    font-size: 30pt;
+    color: rgb(37, 37, 37);
+    margin-top: -70px;
+    font-family: 'Anton', sans-serif;
+}
+
+div.infos {
+    color: rgb(43, 43, 43);
+    display: block;
+    top: -125px;
+    left: 25px;
+    position: relative;
+    font-family: 'Anton', sans-serif;
+}
+
+canvas#game {
+    margin: 10px;
+    padding: auto;
+    border-radius: 10px;
+    background-color: gainsboro;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+    background-image: url('hangman.png')
+}
+
+input#help {
+    display: block;
+    position: relative;
+    top: -495px;
+    left: 446px;
+    margin: 10px;
+    border-radius: 7px;
+    font-size: 9pt;
+    color: white;
+    background-color: gray;
+    border-color: grey;
+}
+
+
+/* WIN PAGE */
+section#win div#words_chosenWin {
+    top: 305px;
+    left: 190px;
+    position: relative;
+    text-align: left;
+    font-size: 18pt;
+    color: rgb(37, 37, 37);
+    font-family: 'Anton', sans-serif;
+}
+
+section#win div#errorsWin {
+    position: relative;
+    top: 360px;
+}
+
+section#win div#timeWin {
+    position: relative;
+    top: 360px;
+}
+
+section#win img {
+    margin-top: -90px;
+}
+
+
+
+
+/* LOOSE PAGE */
+
+section#loose div#words_chosenLoose {
+    top: 335px;
+    left: 190px;
+    position: relative;
+    text-align: left;
+    font-size: 18pt;
+    color: rgb(37, 37, 37);
+    font-family: 'Anton', sans-serif;
+}
+
+section#loose div#errorsLoose {
+    position: relative;
+    top: 390px;
+}
+
+section#loose div#timeLoose {
+    position: relative;
+    top: 390px;
+}
+
+section#loose img {
+    margin-top: -90px;
+}
+
+
+
+section#leaderscore {
+    transition: 1s;
+    display: none;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
+}
+
+div#winnersList {
+    text-align: left;
+    font-size: 18pt;
+    color: rgb(37, 37, 37);
+    font-family: 'Anton', sans-serif;
+}

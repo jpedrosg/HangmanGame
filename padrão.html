@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="refresh()">
+    <header>
+        <h1><br></h1>
+    </header>
+
+    <section id="menu">
+        <img src="menu.png" alt="menu">
+    </section>
+
+    <section id="game">
+        <canvas id="game" width="480" height="480"></canvas>
+        <div><input type="button" id="help" value="?" onclick="reveal()"></div>
+        <div id="errors" class="infos">Erros: </div>
+        <div id="time" class="infos">Tempo: </div>
+        <div id="words_chosen"></div>
+        <div><input type="text" id="try" maxlength="1" size="1"></div>
+    </section>
+
+    <section id="loose">
+            <div id="errorsLoose" class="infos">Erros: </div>
+            <div id="timeLoose" class="infos">Tempo: </div>
+            <div id="words_chosenLoose"></div>
+            <img src="looser.png" alt="winner" usemap="#againLoose">
+            <map name="againLoose">
+                <area shape="rect" coords="116, 464, 400, 487" onclick="reload()">
+            </map>
+    </section>
+
+    <section id="win">
+        <div id="errorsWin" class="infos">Erros: </div>
+        <div id="timeWin" class="infos">Tempo: </div>
+        <div id="words_chosenWin"></div>
+        <img src="winner.png" alt="winner" usemap="#againWin">
+        <map name="againWin">
+            <area shape="rect" coords="117, 439, 392, 462" onclick="reload()">
+        </map>
+    </section>
+
+    <section id="leaderscore">
+        <div id="winnersList"></div>
+        <input type="button" value="RELOAD" onclick="reload()"
+    </section>
+        
+    <footer>
+        <p>&copy; JoãoPedroGiarrante</p>
+    </footer>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
