@@ -4,7 +4,7 @@ TODO: Jogo da Forca Simples!
 
 ## Installation
 
-TODO: Faça o download / clone o projeto. Abra o arquivo "index.html"
+TODO: Faça o download. Abra o arquivo "index.html"
 
 ## Usage
 
